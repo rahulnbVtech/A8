@@ -5,6 +5,7 @@
 #include <string>
 #include "carbuilder.h"
 #include "manualbuilder.h"
+#include "director.h"
 /*
 Client Code: creates builder object
 Passes to director and initiates
