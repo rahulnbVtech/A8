@@ -14,7 +14,7 @@ class Builder{
       virtual void setTripComputer(std::string &tripCompueter) = 0;
       virtual void setGPS(std::string &gps) = 0;
       virtual void setSunroof(bool hasSunroof) = 0;
-      void setColor(const std::string& color);
+      virtual void setColor(const std::string& color) = 0;
       virtual void reset() = 0;
   };
 

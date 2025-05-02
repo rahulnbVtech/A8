@@ -21,7 +21,7 @@ class ManualBuilder : public Builder{
       void setSeats(std::string &seats) override;
       void setTripComputer(std::string &tripComputer) override;
       void setGPS(std::string &gps) override;
-      void setColor(const std::string& color);
+      void setColor(const std::string& color) override;
       virtual void setSunroof(bool hasSunroof) override;
   
       // smart pointers may be better
