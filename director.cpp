@@ -29,7 +29,7 @@ void Director::makeSUV(Builder *builder){
     std::string seats = "4";
     std::string tripComputer = "Luxury Trip Computer";
     std::string gps = "Luxury GPS";
-    std::string color = "Black";
+    std::string color = "black";
     bool hasSunroof = true;
     builder->setEngine(engine);
     builder->setSeats(seats);
