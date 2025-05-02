@@ -22,7 +22,7 @@ class ManualBuilder : public Builder{
       void setTripComputer(std::string &tripComputer) override;
       void setGPS(std::string &gps) override;
       void setColor(const std::string& color);
-      virtual void setSunroof(bool hasSunroof) = 0;
+      virtual void setSunroof(bool hasSunroof) override;
   
       // smart pointers may be better
       Manual* GetProduct();

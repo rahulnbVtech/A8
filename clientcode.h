@@ -23,6 +23,6 @@ void ClientCode2(Director &director);
   // smart pointers can be used
 void ClientCode3(Director &director);
 
-void ClientCode4(Director &director);
+std::pair<Car*, Manual*> ClientCode4(Director &director);
 
 #endif

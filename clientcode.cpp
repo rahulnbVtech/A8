@@ -74,13 +74,14 @@ void ClientCode1(Director &director){
   }
 
   std::pair<Car*, Manual*> ClientCode4(Director& director) {
-    CarBuilder *cbuilder = new CarBuilder();
-    ManualBuilder *mbuilder = new ManualBuilder();
+    CarBuilder* cbuilder = new CarBuilder();
+    ManualBuilder* mbuilder = new ManualBuilder();
     director.makeLuxuryCar(cbuilder);
     director.makeLuxuryCar(mbuilder);
     Car *luxuryCar = cbuilder->GetProduct();
     Manual *luxuryManual = mbuilder->GetProduct();
+    std::pair<Car*, Manual*> result = {luxuryCar, luxuryManual};
 
-    
-    return {luxuryCar, luxuryManual};
+
+    return result;
   }

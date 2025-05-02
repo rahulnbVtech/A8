@@ -25,7 +25,7 @@ class CarBuilder : public Builder{
       void setSeats(std::string &seats) override;
       void setTripComputer(std::string &tripComputer) override;
       void setGPS(std::string &gps) override;
-      virtual void setSunroof(bool hasSunroof) = 0;
+      virtual void setSunroof(bool hasSunroof) override;
       void setColor(const std::string& color);
   
       Car* GetProduct();
